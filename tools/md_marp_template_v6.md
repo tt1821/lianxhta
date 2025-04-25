@@ -1,3 +1,4 @@
+````markdown
 ---
 marp: true
 size: 16:9        # 宽版：4:3
@@ -105,3 +106,4 @@ arlionn@163.com
 
 ![bg left:40% h:200](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20220722114227.png)
 
+````
