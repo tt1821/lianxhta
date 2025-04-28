@@ -10,15 +10,17 @@
 
 ### 2.1 选题认领
 1. 注册一个 GitHub 账号（已有可跳过），登录后访问 [arlionn/lianxhta](https://github.com/arlionn/lianxhta) 仓库。
-2. 点击「[-点击此处 Fork-](https://github.com/arlionn/lianxhta/fork)」Fork 本仓库。Fork 后，你的账号下会生成一个同名仓库：`https://github.com/你的账号/lianxhta`。
-3. 在你 Fork 后的 `lianxhta` 仓库中的【**blog_topic**】文件夹中浏览选题，选定题目后，在 **标题** (&#x1F34E; 注意：是文档标题，而不是正文中的标题) 前加上 `你的姓名-OK-` 前缀。例如：`姓名-OK-原推文标题`。Note: 你只需要按要求添加前缀即可，其他的都不要修改 (包括选题的编号)。
+2. 点击「[-点击此处 Fork-](https://github.com/arlionn/lianxhta/fork)」Fork 本仓库 (已 Fork 可跳过)。Fork 后，你的账号下会生成一个同名仓库：`https://github.com/你的账号/lianxhta`。
+3. 在你 Fork 后的 `lianxhta` 仓库中的【**blog_topic**】文件夹中浏览选题，选定题目后，在 **标题** (&#x1F34E; 注意：是文档标题，而不是正文中的标题) 前加上 `你的姓名-OK-` 前缀。例如：`姓名-OK-原推文标题` (不要随意添加空格)。Note: 你只需要按要求添加前缀即可，其他的都不要修改 (包括选题的编号)。
 4. 如果你在几天前 Fork 了主仓库，那么请先将主仓库的最新代码同步到你的 Fork 仓库中。具体操作如下 (参见补充说明 1)：
    1. 点击页面右上角的 **Sync fork** 按钮。
    2. 在弹出的对话框中，点击 **Update branch** 按钮。
    3. 等待更新完成后，点击 **View code** 按钮返回代码页面。
 5. 点击右上角绿色按钮「**Commit changes**」提交修改 (下方有两个选项，默认选第一个 (`Commit directly to the main branch`) 即可)。
 6. 在你 Fork 后的 `lianxhta` 仓库中，点击左上方主菜单中的「**Pull requests**」选项卡，点击「**New pull request**」，选择 `main` 分支，点击「**Create pull request**」，填写标题和描述后提交。
-7. 提交后，等待连老师审核。审核通过后，你会收到邮件通知，并在主仓库看到你的更改。
+7. 提交后，等待连老师审核。审核通过后，你会收到邮件通知。
+8. 返回你名下的仓库，按照第 4 步的方法，点击 **Sync fork** 按钮，更新你的 Fork 仓库，便可在你名下的仓库中看到最新的选题列表。
+
 
 **补充说明：**
 
