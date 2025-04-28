@@ -1,4 +1,4 @@
-# B767：IV：形形色色的 IV
+# 万储诚-OK-B767：IV：形形色色的 IV
 
 > Wu, A., Kuang, K., Xiong, R., & Wu, F. (2022). Instrumental Variables in Causal Inference and Machine Learning: A Survey (Version 1). arXiv. [Link](https://doi.org/10.48550/arXiv.2212.05778) (rep), [PDF](https://arxiv.org/pdf/2212.05778.pdf), [Google](<https://scholar.google.com/scholar?q=Instrumental Variables in Causal Inference and Machine Learning: A Survey (Version 1)>).
 
