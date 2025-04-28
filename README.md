@@ -11,7 +11,7 @@
 ### 2.1 选题认领
 1. 注册一个 GitHub 账号（已有可跳过），登录后访问 [arlionn/lianxhta](https://github.com/arlionn/lianxhta) 仓库。
 2. 点击「[-点击此处 Fork-](https://github.com/arlionn/lianxhta/fork)」Fork 本仓库。Fork 后，你的账号下会生成一个同名仓库：`https://github.com/你的账号/lianxhta`。
-3. 在你 Fork 后的 `lianxhta` 仓库中的【**blog_topic**】文件夹中浏览选题，选定题目后，在标题前加上 `你的姓名-OK-` 前缀。例如：`姓名-OK-原推文标题`。Note: 你只需要按要求添加前缀即可，其他的都不要修改 (包括选题的编号)。
+3. 在你 Fork 后的 `lianxhta` 仓库中的【**blog_topic**】文件夹中浏览选题，选定题目后，在 **标题** (&#x1F34E; 注意：是文档标题，而不是正文中的标题) 前加上 `你的姓名-OK-` 前缀。例如：`姓名-OK-原推文标题`。Note: 你只需要按要求添加前缀即可，其他的都不要修改 (包括选题的编号)。
 4. 如果你在几天前 Fork 了主仓库，那么请先将主仓库的最新代码同步到你的 Fork 仓库中。具体操作如下 (参见补充说明 1)：
    1. 点击页面右上角的 **Sync fork** 按钮。
    2. 在弹出的对话框中，点击 **Update branch** 按钮。
