@@ -58,5 +58,39 @@
 ### 2.3 推文发布后
 
 推文发布后，你可以在 [lianxh.cn](https://www.lianxh.cn) 搜索，亦可使用 [lianxh](https://www.lianxh.cn/details/1296.html) 命令查询。确认后，请按照 2.1 小节第 3 步，将文件名改为：
+
 - `Pub-B723-姓名：推文标题.md`
-我随后会把这些选题文档转入 **[Published]** 文件夹，该推文正式计入你的工作量。
+
+我随后会把这些选题转入 **[Published]** 文件夹，并更新你的工作量记录。
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/Lianxh_装饰黄线.png)
+
+## 附：操作过程图示
+
+> Note: 如下图片由助教杨云帆同学提供，感谢他的贡献！
+
+### 1. 同步仓库
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250429170014.png)
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250429170036.png)
+
+### 2. 认领选题：修改文档标题
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250429170051.png)
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250506234155.png)
+
+### 3. 提交到主仓库
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250429170136.png)
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250429170156.png)
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250429170214.png)
