@@ -1,11 +1,18 @@
-# R 语言绘制供需曲线指南
 
 > 作者：张祖冲（江苏大学）  
 > 邮箱：zzchong1228@163.com
 
-本文基于 [Create supply and demand economics curves with ggplot2](https://www.andrewheiss.com/blog/2017/09/15/create-supply-and-demand-economics-curves-with-ggplot2/) 的内容，详细介绍如何使用 R 语言绘制经济学中的供需曲线图。
+&emsp; 
 
-## 准备工作
+> **Source**: 本文基于 [Create supply and demand economics curves with ggplot2](https://www.andrewheiss.com/blog/2017/09/15/create-supply-and-demand-economics-curves-with-ggplot2/) 的内容，详细介绍如何使用 R 语言绘制经济学中的供需曲线图。
+
+&emsp; 
+
+- **Title**: R 语言绘制供需曲线指南
+- **Keywords**: R语言, 供需曲线, ggplot2, Hmisc, 可视化, R绘图
+
+
+## 1. 准备工作
 
 首先，需要安装并加载必要的 R 包。如果未安装这些包，需要先运行以下命令：
 
@@ -23,7 +30,7 @@ library(ggplot2)    # 用于绘图
 library(Hmisc)      # 提供贝塞尔曲线函数
 ```
 
-## 创建基本供给曲线
+## 2. 创建基本供给曲线
 
 首先使用 `Hmisc` 包中的 `bezier` 函数生成一条平滑的供给曲线。该函数通过三个控制点 (1,1)、(8,5) 和 (9,9) 定义一条二次贝塞尔曲线，并生成曲线上的 100 个坐标点：
 
@@ -40,7 +47,7 @@ ggplot(supply, aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513140610839.png)
 
-## 绘制多条供给曲线
+## 3. 绘制多条供给曲线
 
 接下来，创建两条不同的供给曲线（一条直线和一条曲线），然后与原曲线一起在同一图表上展示：
 
@@ -68,7 +75,7 @@ ggplot(all_supply_curves, aes(x = x, y = y, colour = id)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513144104091.png)
 
-## 添加需求曲线
+## 4. 添加需求曲线
 
 下面创建一条需求曲线，并与供给曲线一起展示：
 
@@ -88,7 +95,7 @@ ggplot(mapping = aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513144611172.png)
 
-## 寻找供需均衡点
+## 5. 寻找供需均衡点
 
 在经济学分析中，供需曲线的交点代表市场均衡。下面通过函数插值和求根方法找到这个均衡点：
 
@@ -123,7 +130,7 @@ intersection_funs
 ## [1] 0.00006103516
 ```
 
-## 可视化均衡点
+## 6. 可视化均衡点
 
 现在在图表中标记出均衡点：
 
@@ -157,7 +164,7 @@ ggplot(mapping = aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513151306653.png)
 
-## 创建通用交点计算函数
+## 7. 创建通用交点计算函数
 
 为了便于重复使用，创建一个通用函数来计算任意两条曲线的交点：
 
@@ -190,7 +197,7 @@ intersection_xy
 ## [1] 3.395557
 ```
 
-## 绘制带连接线的均衡点
+## 8. 绘制带连接线的均衡点
 
 现在可以更清晰地展示均衡点，并用虚线连接到坐标轴：
 
@@ -217,7 +224,7 @@ ggplot(mapping = aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513160545215.png)
 
-## 模拟需求变化对均衡的影响
+## 9. 模拟需求变化对均衡的影响
 
 经济学分析中一个常见场景是研究需求变化对市场均衡的影响。下面创建第二条需求曲线，展示需求增加时的新均衡：
 
@@ -248,7 +255,7 @@ ggplot(mapping = aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513160744937.png)
 
-## 创建专业经济学图表
+## 10. 添加标签、箭头和注释
 
 最后，添加标签、箭头和注释，创建一个专业的经济学教学图表：
 
@@ -297,7 +304,7 @@ ggplot(mapping = aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513161742071.png)
 
-## 完整代码示例
+## 附：完整代码示例
 
 下面是创建一个完整经济学供需分析图的代码：
 
@@ -354,3 +361,22 @@ ggplot(mapping = aes(x = x, y = y)) +
 
 ![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined20250513163531861.png)
 
+
+&emsp;
+
+## 相关推文
+
+> Note：产生如下推文列表的 Stata 命令为：   
+> &emsp; `lianxh R语言+图, md0 nocat`  
+> 安装最新版 `lianxh` 命令：    
+> &emsp; `ssc install lianxh, replace` 
+
+  - [吴小齐](https://www.lianxh.cn/search.html?s=吴小齐), 2023, [R语言：将tikz图片转换为PNG](https://www.lianxh.cn/details/1289.html), 连享会 No.1289.
+  - [李增杰](https://www.lianxh.cn/search.html?s=李增杰), 2024, [R语言：IPW深度解读-离散变量和连续变量情形](https://www.lianxh.cn/details/1532.html), 连享会 No.1532.
+  - [郑晓雪](https://www.lianxh.cn/search.html?s=郑晓雪), 2022, [R语言绘制社会网络图](https://www.lianxh.cn/details/953.html), 连享会 No.953.
+  - [郑晓雪](https://www.lianxh.cn/search.html?s=郑晓雪), 2022, [R语言随机指数图分析-statnet](https://www.lianxh.cn/details/963.html), 连享会 No.963.
+  - [闫钊鹏](https://www.lianxh.cn/search.html?s=闫钊鹏), 2023, [R语言：gtExtras包-绘制漂亮的表格和图形](https://www.lianxh.cn/details/1311.html), 连享会 No.1311.
+  - [雷诺](https://www.lianxh.cn/search.html?s=雷诺), 2023, [R语言：拆解因果推断中的后门法则](https://www.lianxh.cn/details/1323.html), 连享会 No.1323.
+  - [颜国强](https://www.lianxh.cn/search.html?s=颜国强), 2024, [R语言绘图：Tidyplots（二）-函数一览及实例](https://www.lianxh.cn/details/1518.html), 连享会 No.1518.
+  - [颜国强,连玉君](https://www.lianxh.cn/search.html?s=颜国强,连玉君), 2024, [tidyplots：跟 ggplot2 说再见吧！](https://www.lianxh.cn/details/1513.html), 连享会 No.1513.
+ 
