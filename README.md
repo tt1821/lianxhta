@@ -1,4 +1,4 @@
-> Update: `2025/5/6 22:55`
+> Update: `2025/6/11 15:51`
 
 ## 1. 答疑工作指南
 
@@ -15,7 +15,7 @@
 2. **Fork [arlionn/lianxhta] 仓库**。[-点击此处-](https://github.com/arlionn/lianxhta/fork) Fork 本仓库 (已 Fork 可跳过)。Fork 后，你的账号下会生成一个同名仓库：`https://github.com/你的账号/lianxhta`。
 
 3. **选题-更改文件名**。
-   - 在仓库中的【**<font color=green>blog_topic</font>**】文件夹中浏览选题；
+   - 在仓库中的【<font color=green>blog_topic</font>】文件夹中浏览选题；
    - 选定题目后，按如下规则修改 **页面标题** (&#x1F34E; 注意：是页面标题，而不是正文中的标题)
      - 旧文件名：`B723：推文标题.md` 
      - 新文件名：`OK-B723-姓名：推文标题.md`
