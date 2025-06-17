@@ -343,3 +343,17 @@ matrices:
 ## 5. 结语
 
 `pretrends` 命令为评估DID研究中事前趋势检验的可靠性提供了实用工具。不显著的事前趋势不等于不存在，因此在处理事前趋势检验的结果时要更加谨慎，也可考虑与不依赖事前趋势检验显著性的 [HonestDiD]事前趋势检验https://github.com/mcaceresb/stata-honestdid/?tab=readme-ov-file#example-usage----medicaid-expansions) 等敏感性分析方法结合使用。
+
+## 6. 相关推文
+
+> Note：产生如下推文列表的 Stata 命令为：   
+> &emsp; `lianxh 事前趋势检验 平行趋势检验, md0`  
+> 安装最新版 `lianxh` 命令：    
+> &emsp; `ssc install lianxh, replace` 
+
+- 专题：[倍分法DID](https://www.lianxh.cn/blogs/39.html)
+  - [侯新烁](https://www.lianxh.cn/search.html?s=侯新烁), 2019, [多期DID：平行趋势检验图示](https://www.lianxh.cn/details/112.html), 连享会 No.112.
+  - [朱学贵](https://www.lianxh.cn/search.html?s=朱学贵), 2020, [多期DID之安慰剂检验、平行趋势检验](https://www.lianxh.cn/details/259.html), 连享会 No.259.
+  - [李闯](https://www.lianxh.cn/search.html?s=李闯), 2023, [多时点DID保姆级教程(上)-平行趋势检验](https://www.lianxh.cn/details/1201.html), 连享会 No.1201.
+  - [郭楚玉](https://www.lianxh.cn/search.html?s=郭楚玉), 2022, [DID-倍分法：事前趋势检验的局限性和诊断](https://www.lianxh.cn/details/1103.html), 连享会 No.1103.
+  - [陈波](https://www.lianxh.cn/search.html?s=陈波), 2022, [Stata：一行代码绘制平行趋势图-eventdd](https://www.lianxh.cn/details/927.html), 连享会 No.927.
