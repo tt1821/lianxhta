@@ -6,7 +6,7 @@ Marker converts documents to markdown, JSON, and HTML quickly and accurately.
 
 -   Converts PDF, image, PPTX, DOCX, XLSX, HTML, EPUB files in all languages
 -   Does structured extraction, given a JSON schema (beta)
--   Formats tables, forms, equations, inline math, links, references, and code blocks
+-   Formats tables, forms, equations, inline math, links, references, 和 code blocks
 -   Extracts and saves images
 -   Removes headers/footers/other artifacts
 -   Extensible with your own formatting and logic
