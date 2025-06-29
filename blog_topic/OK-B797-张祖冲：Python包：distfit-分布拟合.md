@@ -1,26 +1,177 @@
-# B797：Python包：distfit-分布拟合
+## 引言
 
-![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/20250530002953.png)
+在数据科学领域，理解数据集的底层概率分布是执行假设检验、构建模拟模型和进行异常检测等关键任务的基石。传统上，Python数据科学家依赖于功能强大的`scipy.stats`库来执行分布拟合。这个过程虽然稳健，但通常是手动的、重复的。我们需要首先对可能适合数据的候选分布有一个初步的假设，然后编写代码，对每个候选分布进行单独拟合，计算拟合优度（Goodness-of-Fit, GOF）指标，最后比较这些指标以确定最佳模型 。
 
-写一篇推文，介绍 Python 中的 distfit 包，并在推文中插入一些简单的例子，来展示这个包的一些独特的功能。
+`scipy.stats.fit`函数是这一过程的核心构建块，但它要求用户预先指定要拟合的分布对象 。这引出了一个核心的“发现问题”：如果我们不确定哪些分布是合适的候选者，或者希望探索更广泛的可能性，该怎么办？手动测试数十种分布不仅效率低下，而且容易出错，需要大量的样板代码来管理循环、结果存储和错误处理。这种方法限制了分析的广度和深度，可能会导致我们仅仅依赖于少数几种熟悉的分布（如正态分布），从而错失更精确描述数据的模型。
 
-- [distfit 主页](https://erdogant.github.io/distfit/pages/html/index.html)
-  - [github](https://github.com/erdogant/distfit)
+## distfit
 
-### Key Features
+`distfit`的出现正是为了解决上述挑战。它是一个专为单变量随机变量进行概率密度拟合而设计的Python包，其核心价值在于自动化。`distfit`能够将经验数据与源自`scipy`库的超过89种理论分布进行自动测试，从而找到最佳拟合模型。
 
-| Feature | Description |
-| --- |  --- |
-| [**Parametric Fitting**](https://erdogant.github.io/distfit/pages/html/Parametric.html) | Fit distributions on empirical data X. |
-| --- |  --- |
-| [**Non-Parametric Fitting**](https://erdogant.github.io/distfit/pages/html/Quantile.html) | Fit distributions on empirical data X using non-parametric approaches (quantile, percentiles). |
-| [**Discrete Fitting**](https://erdogant.github.io/distfit/pages/html/Discrete.html) | Fit distributions on empirical data X using binomial distribution. |
-| [**predict**](https://erdogant.github.io/distfit/pages/html/Functions.html#module-distfit.distfit.distfit.predict) | Compute probabilities for response variables y. |
-| [**Generate Synthetic Data**](https://erdogant.github.io/distfit/pages/html/Generate.html) | Generate synthetic data. |
-| [**Plots**](https://erdogant.github.io/distfit/pages/html/Plots.html) | Varoius plotting functionalities. |
+### 简介
 
-### Resources and Links
+该库的强大之处在于其端到端的解决方案。用户只需提供原始数据，`distfit`就能自动完成整个发现、拟合、评估和可视化的流程，最终返回最佳拟合分布的名称及其关键参数（如`loc`、`scale`和`arg`）。此外,`distfit`的功能覆盖范围极广，它不仅支持参数化拟合，还提供了非参数化（基于分位数或百分位数）和离散（基于二项分布）的拟合方法，使其成为一个适用于多种数据类型的综合性工具。
 
--   **Example Notebooks:** [Examples](https://erdogant.github.io/distfit/pages/html/Documentation.html)
--   **Blog Posts:** [Medium](https://erdogant.github.io/distfit/pages/html/Documentation.html#medium-blog)
--   **Documentation:** [Website](https://erdogant.github.io/distfit)
+本节将通过一个可复现的示例，引导读者完成`distfit`最常见的使用流程，展示其API的简洁性与功能的强大性。我们将重点关注`fit_transform`和`plot`这两个核心方法。
+### 安装与设置
+
+`distfit`的安装过程非常直接，可以通过Python的包管理器pip轻松完成。
+```shell
+pip install distfit
+# 如果运行失败，可能是因为distfit对scipy的版本有要求
+pip install --upgrade statsmodels
+pip install "scipy<1.13"
+```
+
+`distfit`依赖于数据科学生态中常见的库，如`numpy`、`pandas`和`matplotlib`，这些通常已经存在于标准的分析环境中 。
+
+```python
+import numpy as np
+from distfit import distfit
+import matplotlib.pyplot as plt
+
+# 1. 生成示例数据
+X = np.random.normal(loc=0, scale=2, size=1000)
+
+# 2. 初始化distfit对象
+# 默认情况下，它会测试所有支持的分布
+dist = distfit()
+
+# 3. 执行拟合与转换
+dist.fit_transform(X)
+```
+
+### fit_transform方法：自动拟合
+
+当`fit_transform(X)`被调用时，`distfit`在后台执行了一系列复杂的操作。它会遍历其内部包含的89种以上的理论分布，将每一种分布与输入数据`X`进行拟合。对于每一次拟合，它都会计算一个拟合优度分数，默认使用残差平方和（RSS）作为评估指标 。RSS通过计算观测频率与模型预测频率之间差异的平方和来衡量拟合的优劣 。完成所有测试后，`distfit`会将所有分布的拟合结果存储起来，并自动识别出RSS最低（即拟合最好）的分布作为最佳模型。
+
+```shell
+fit
+transform
+[norm      ] [0.00 sec] [RSS: 0.0063365] [loc=0.031 scale=1.958]
+[expon     ] [0.0 sec] [RSS: 0.195545] [loc=-6.050 scale=6.081]
+[pareto    ] [0.00 sec] [RSS: 0.195545] [loc=-536870918.050 scale=536870912.000]
+[dweibull  ] [0.00 sec] [RSS: 0.00829788] [loc=0.030 scale=1.674]
+[t         ] [0.05 sec] [RSS: 0.00633868] [loc=0.031 scale=1.956]
+[genextreme] [0.01 sec] [RSS: 0.00679308] [loc=-0.720 scale=1.902]
+[gamma     ] [0.01 sec] [RSS: 0.00629516] [loc=-24.149 scale=0.159]
+[lognorm   ] [0.02 sec] [RSS: 0.00630021] [loc=-36.202 scale=36.181]
+[beta      ] [0.03 sec] [RSS: 0.00627663] [loc=-17.220 scale=75.123]
+[uniform   ] [0.0 sec] [RSS: 0.13376] [loc=-6.050 scale=12.815]
+[loggamma  ] [0.01 sec] [RSS: 0.00637546] [loc=-449.905 scale=64.526]
+[norm      ] [0.17 sec] [RSS: 0.0063365] [loc=0.031 scale=1.958]
+[expon     ] [0.16 sec] [RSS: 0.195545] [loc=-6.050 scale=6.081]
+[pareto    ] [0.16 sec] [RSS: 0.195545] [loc=-536870918.050 scale=536870912.000]
+[dweibull  ] [0.16 sec] [RSS: 0.00829788] [loc=0.030 scale=1.674]
+[t         ] [0.16 sec] [RSS: 0.00633868] [loc=0.031 scale=1.956]
+[genextreme] [0.10 sec] [RSS: 0.00679308] [loc=-0.720 scale=1.902]
+[gamma     ] [0.09 sec] [RSS: 0.00629516] [loc=-24.149 scale=0.159]
+[lognorm   ] [0.07 sec] [RSS: 0.00630021] [loc=-36.202 scale=36.181]
+[beta      ] [0.05 sec] [RSS: 0.00627663] [loc=-17.220 scale=75.123]
+[uniform   ] [0.01 sec] [RSS: 0.13376] [loc=-6.050 scale=12.815]
+[loggamma  ] [0.01 sec] [RSS: 0.00637546] [loc=-449.905 scale=64.526]
+```
+
+### plot方法：可视化
+
+完成拟合后，`distfit`提供了多种方式来检查和理解结果。最直观的方式是调用`plot()`方法，它能够立即生成一张信息丰富的图表。
+
+```PYTHON
+# 4. 绘制最佳拟合分布图
+dist.plot()
+plt.show()
+```
+
+此命令会生成一张图，其中包含数据的经验分布直方图，并叠加了最佳拟合分布的概率密度函数（PDF）曲线 1 。这种即时的视觉反馈对于快速验证拟合效果至关重要。
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250629113305.png)
+
+
+### model属性：查看关键信息
+
+除了可视化，量化结果同样重要。最佳拟合模型的详细信息存储在`dist.model`属性中。这是一个字典，包含了模型的关键信息：
+- `name`: 最佳拟合分布的名称 (例如, 'norm')。
+- `RSS`: 该分布的残差平方和分数。
+- `params`: 拟合得到的分布参数元组。
+- `loc`, `scale`, `arg`: 分布的位置、尺度和其他形状参数。
+
+```python
+# 5. 打印最佳模型的详细信息
+print(dist.model)
+```
+
+### summary属性及其可视化
+
+`distfit`并不仅仅提供最佳结果。为了进行更全面的评估，用户可以查看所有被测试分布的性能。`dist.summary`属性是一个Pandas DataFrame，包含了所有分布的名称及其对应的RSS分数 。此外,`dist.plot_summary()`方法可以将其可视化，让用户一目了然地比较不同分布的拟合情况 。
+
+```
+          name     score               loc          scale 
+0      lognorm  0.002883       -106.648967     106.627079 
+1        gamma  0.002883        -86.017723       0.045912 
+2            t  0.002883         -0.006771       1.951297 
+3         norm  0.002899         -0.005267       1.987143 
+4         beta  0.002899        -57.999477  314691.616475 
+5     loggamma  0.002957       -425.050394      61.868687 
+6   genextreme  0.003799         -0.751068       1.970547 
+7     dweibull  0.003926         -0.004612       1.692228 
+8      uniform  0.128472         -6.257445      12.729855 
+9       pareto  0.194026 -536870918.257445    536870912.0 
+10       expon  0.194026         -6.257445       6.252178 
+```
+
+![](https://fig-lianxh.oss-cn-shenzhen.aliyuncs.com/undefined%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250629113259.png)
+
+`distfit`的价值远不止于一个便捷的拟合工具。它提供了一系列直接解决常见数据科学问题的功能，如预测、模拟和性能优化。这些应用导向的特性使其从一个统计效用库转变为一个全面的问题解决工具包。
+
+### predict方法
+
+`predict(y)`方法是`distfit`的一个关键差异化功能 。它的作用是：基于前一步骤中找到的最佳拟合分布，计算一组新数据点`y`出现的概率。这在异常检测等场景中极为有用。下面是一个示例，我们使用上一节训练好的模型来预测一组新数据点的概率，其中包含了一些可能偏离正常范围的值。
+
+`predict`方法的输出非常丰富，通常存储在`dist.results`字典中。它不仅包含每个数据点的原始p值（`'P'`）和经过校正的概率（`'y_proba'`），还提供了一个分类预测（`'y_pred'`），例如'up'（显著高值）、'down'（显著低值）或'none'（在正常范围内）。
+
+```python
+# 假设dist对象已经通过fit_transform(X)拟合
+# 定义一组新的数据点，包含一些潜在的异常值
+y = np.array([0, 1, 8, 10, -7])
+
+# 使用拟合好的模型进行预测
+dist.predict(y)
+
+# 预测结果存储在dist.results中
+# todf=True可以在初始化时设定，方便直接输出DataFrame
+print(dist.results['df'])
+
+# 打印信息如下
+      y   y_proba y_pred         P
+0   0.0  0.494599   none  0.494599
+1   1.0  0.375492   none  0.300394
+2   8.0  0.000541     up  0.000216
+3  10.0  0.000090     up  0.000018
+4  -7.0  0.001337   down  0.000802
+```
+
+一个尤其值得称赞的特性是，`distfit`在计算概率时默认执行了**多重检验校正**（例如，Benjamini-Hochberg方法，即`fdr_bh`）。在同时对多个数据点进行假设检验时，这种校正对于控制伪发现率（False Discovery Rate）至关重要，是统计严谨性的体现，但在手动实现中常常被忽略。
+
+### generate方法
+
+`distfit`的另一个实用功能是`generate(n)`方法，它允许用户从最佳拟合分布中生成新的随机样本 。 
+
+```Python
+# 从最佳拟合分布（例如，正态分布）中生成1000个新的数据点
+X_synthetic = dist.generate(n=1000)
+```
+
+这个功能的应用场景非常广泛，包括：
+- 为机器学习模型创建增强数据集。 
+- 运行蒙特卡洛模拟来评估风险或预测结果。 
+- 使用符合真实数据特征的分布来对系统进行压力测试 。  
+`generate()`方法完成了从“分析数据”到“利用模型”的闭环，让用户不仅能理解现有数据，还能基于这种理解创造新的、具有相似统计特性的数据。
+
+## 总结
+
+`distfit`在提供自动化便利的同时，也保留了高度的灵活性和控制权。
+
+- **自定义搜索空间**: 当我们对数据有先验知识时，无需测试所有89种分布。可以在初始化`distfit`对象时通过`distr`参数指定一个具体的分布列表（如`distr=['norm', 't']`）或一个预设的常用分布集合（`distr='popular'`）。这可以显著节约计算时间。  
+- **选择拟合优度指标**: 尽管RSS是默认选项，但用户可以根据具体问题选择其他统计量，如柯尔莫哥洛夫-斯米尔诺夫检验（`stats='ks'`）、瓦瑟斯坦距离（Wasserstein）或能量距离（Energy）。  
+- **并行计算加速**: 对于大型数据集或计算密集型方法（如自助法 bootstrapping），`distfit`支持通过`n_jobs`参数进行并行计算，利用多核CPU来加速拟合过程 。需要注意的是，官方文档提示，在某些情况下，多核处理可能引发运行时警告，因此在追求绝对稳定性的场景下，`n_jobs=1`是更可靠的选择 。
+
+`distfit`不仅仅是一个理论拟合工具，更是一个面向实际应用的解决方案。通过将异常检测和数据模拟直接集成到库中，`distfit`把用户的工作流程统一在一个连贯的框架内。我们无需再为了拟合、预测和生成数据而拼凑多个不同的库，从而可以更高效地解决一个完整的业务问题，例如“识别系统中的异常交易，并模拟未来一个月的交易活动”。内置多重检验校正等统计上严谨的默认设置，进一步巩固了其作为专业级数据科学工具的地位。`distfit`最强大的吸引力在于其**极致的简洁性**与**强大的端到端功能**的结合，让你用几行代码就能完成从寻找最佳模型、可视化、预测异常值到生成模拟数据的全过程。
