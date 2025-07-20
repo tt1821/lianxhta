@@ -1,0 +1,221 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "连享会助教手册",
+    "section": "",
+    "text": "主页 || 课程 || 视频 || 推文 || 资料",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>连享会助教手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/01_intro.html",
+    "href": "body/01_intro.html",
+    "title": "2  概览：推文选题和提交",
+    "section": "",
+    "text": "2.1 助教答疑工作指南",
+    "crumbs": [
+      "**整体流程**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>概览：推文选题和提交</span>"
+    ]
+  },
+  {
+    "objectID": "body/01_intro.html#基本流程",
+    "href": "body/01_intro.html#基本流程",
+    "title": "2  概览：推文选题和提交",
+    "section": "2.2 基本流程",
+    "text": "2.2 基本流程",
+    "crumbs": [
+      "**整体流程**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>概览：推文选题和提交</span>"
+    ]
+  },
+  {
+    "objectID": "body/01_intro.html#格式",
+    "href": "body/01_intro.html#格式",
+    "title": "2  概览：推文选题和提交",
+    "section": "2.3 格式",
+    "text": "2.3 格式",
+    "crumbs": [
+      "**整体流程**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>概览：推文选题和提交</span>"
+    ]
+  },
+  {
+    "objectID": "body/01_intro.html#注意事项",
+    "href": "body/01_intro.html#注意事项",
+    "title": "2  概览：推文选题和提交",
+    "section": "2.4 注意事项",
+    "text": "2.4 注意事项",
+    "crumbs": [
+      "**整体流程**",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>概览：推文选题和提交</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA01-QA.html",
+    "href": "body/TA01-QA.html",
+    "title": "3  TA01：连享会助教答疑手册",
+    "section": "",
+    "text": "3.1 1. 工作概览\n开课前，建议大家熟悉如下工具：\n答疑工作主要分为两个部分：",
+    "crumbs": [
+      "**答疑工作**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>TA01：连享会助教答疑手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA01-QA.html#工作概览",
+    "href": "body/TA01-QA.html#工作概览",
+    "title": "3  TA01：连享会助教答疑手册",
+    "section": "",
+    "text": "A1. 课程微信群答疑。开课前一周到课程回放结束前，学员会在微信群中提问，助教需要及时解答。详见 A1. 课程微信群答疑。\n\n参与人：所有助教，不分组。\n\n每日答疑文档收集和整理 (上课期间)。\n\nS1. 收集问题。每日早 9:30 通过腾讯文档在课程群内收集学员的问题。详见 S1. 收集学员的提问。\nS2-预回答。在 Markdown 中整理成 Q-A 形式，由助教预先回答约 80% 的问题。当日值班小组成员预先回答力所能及的问题 (Part1)，留下 10-15 个无法应对的问题发给老师解答 (Part2)；参见 3. 答疑方法和工具。\nS3-给老师发送答疑文档。将 Part1 和 Part2 中问题编辑为 .md 或 .docx 文档，在正式答疑前 10 分钟发给讲师。注意：Part2 中问题放在文档前面，方便老师查看；Part2 部分放在后面，便于老师了解学员疑问并补充回答。\nS4-发布答疑文档。老师答疑结束后，助教团队分工整理答疑 Q-A 文档 (谁整理某题谁署名)；由当日小组长将最终 Q-A 文档发布到 连享会-FAQs 中对应的课程文件夹下。详见 S4. 发布答疑文档。",
+    "crumbs": [
+      "**答疑工作**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>TA01：连享会助教答疑手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA01-QA.html#工作流程详解",
+    "href": "body/TA01-QA.html#工作流程详解",
+    "title": "3  TA01：连享会助教答疑手册",
+    "section": "3.2 2. 工作流程详解",
+    "text": "3.2 2. 工作流程详解\n\n3.2.1 A1. 课程微信群答疑\n微信群答疑时间为开课前两周至结束后两周。开课前主要解答软件安装和基础问题；上课期间及课后，学员会针对授课内容和代码实操提出问题，需及时解答。\n\n协作： 答疑工作不做分组，大家团队协作，能者多劳；回答问题少的同学可以在问题整理等其他环节多承担一些。工作表现作为入选「连享会-助教群英会」的重要依据。\n工具和答疑方式： 如果学员提的问题不够清晰，可以要求他把问题背景说清楚。答疑过程中可以借助 AI 工具，也可以直接发送与问题密切相关的推文链接。详见 3. 答疑方法和工具。\n\n\n\n3.2.2 S1. 收集学员的提问\n\n工具： 腾讯文档(在线收集表)\n使用途径：\n\n手机端：微信小程序\n电脑端：腾讯文档官网 (https://docs.qq.com/desktop)\n\n演示截图 (以手机端为例)： \n参考模板 (仅供参考)\n\n收集主题：xxx班-第 # 日课程提问\n收集说明：【助教：XX】邀请大家参与问题收集 · 搜集 XX 班学员的问题\n输入问题：请尽量详细描述您的问题：\n\n电脑端更多设置： 限制填写次数&多种分享方式（微信小程序和链接） \n\n\n\n3.2.3 S2. 预回答\n学员提到的多数问题都可以在往期课程的 连享会-FAQS 或连享会推文 中找到答案。因此助教在看到学员的提问后，首先在这两个渠道搜索是否有相关的解答。\n\n对于高度契合的问题，用 lianxh 和 songbl 命令搜索已有解答，将推文链接插入答疑文档即可。注意：请务必使用 lianxh 关键词, md nocat 命令，生成 Markdown 格式的链接，方便后续发布到 Wiki 中。\n对于不太契合的问题，助教可以借助 AI 工具编排答案，辅以几个与问题相关的推文链接。注意：所有回答都要用 Markdown 格式，方便后续发布到 Wiki 中。\n提供解答过程中，尽量提供准确的参考文献和推文链接，方便学员后续查阅。参考文献可以采用 getiref 命令快速生成引文信息，附加 PDF 和 Google 学术链接。详见 3. 答疑方法和工具。\n请务必在答案下方另起一行注明回答人姓名，方便后期更新： (回答人：xxxx)\n\n小组内部协作方法，参见 3f. 内部协作整理。\n\n\n3.2.4 S3. 给老师发送答疑文档\n\n发送给老师的 QA 文档标题为：xx班-FAQs-Day#.md。\n有些老师喜欢用 Word 文档 (请小组长预先与老师沟通)，可以用 Typora 或 VScode 将 .md 文档转换为 Word 版本发给老师。\n\n用 Typora 转 Word 前，需预先安装 Pandoc。详见：五分钟Typora教程。\n用 VScode 转 Word 前，需预先安装 Markdown All in One 或 Markdown Preview Enhanced 插件。详见：VScode：实用 Markdown 插件推荐。\n\nQA 文档格式。按照 此格式 的格式整理好： ```Markdown ——–文档标题：— xx班-Day#-答疑.md———\n### Q1. 问题描述 &gt;A: 解答文字\n### Q2. 问题描述 &gt;A: 解答文字 ```\n\n\n\n3.2.5 S4. 发布答疑文档\n\n负责人：当日值班小组的组长。协调各位组员对当日 QA 文档进行整理和修改。\n文档要求：确保文档格式统一，内容准确。有些老师上课回答问题的时候会采用语音识别，形成的文字会比较口语化，可以把这些文字借助 AI 工具进行修改和润色。必要时可以补充一些参考文献、网页链接，以及连享会的推文进行扩展。\n\n文档标题：xx班-FAQs-Day#.md。\n文档格式：按照 此格式 的格式整理好。\n\n发布方式：\n\n课程主页 Wiki： 在课程主页 Wiki 中发布当天的答疑文档链接，方便学员查阅。进入 连享会 QA-Wikis 页面后，在左侧找到对应的课程文件夹：单击小圆圈 &gt; 添加新页面 &gt; 贴入当天的答疑文档 &gt; 填写标题 &gt; 保存，形成文档链接。\n微信群：(1) 发布当天的答疑文档链接；(2) 将 xx班-FAQs-Day#.md 转换为 PDF 格式，发布在微信群中。",
+    "crumbs": [
+      "**答疑工作**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>TA01：连享会助教答疑手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA01-QA.html#qa-tools",
+    "href": "body/TA01-QA.html#qa-tools",
+    "title": "3  TA01：连享会助教答疑手册",
+    "section": "3.3 3. 答疑方法和工具",
+    "text": "3.3 3. 答疑方法和工具\n大家在回答问题过程中，可以通过如下途径搜索相关问题，若已经有解答，可以把对应的链接发给学员。也可以做个基本的答疑手册，把这些链接汇总起来，放在课程主页的 Wiki 里，每次学员提问之前可以先看看是否已经有答案。 - 连享会主页；连享会知乎 - 寒假班课程主页 - 以往现场班 FAQs | 更早的FAQs\n\n3.3.1 3a. 连享会主页搜索\n很多早期学员提出的问题都已经写成了推文，约半数以上的学员提供都可以通过这些推文得到解答。\n非 Stata 用户，可以在 https://www.lianxh.cn 上可以直接搜索关键词，找到相关的推文和文章，进而把链接发到微信群中。\n\n\n3.3.2 3b. AI 助手\n你可以使用 ChatGPT, DeepSeek，豆包等工具来回答学员的问题。几点建议： - 有些学员的问题问的很笼统，所以在借助 AI 提问时，可以自己修改一下提示词。 - 可以通过截图或链接来分享答案。另见，DeepSeek对话分享方法。\n\n\n3.3.3 3c. lianxh 命令 - 搜推文\n在 Stata 中使用 lianxh (或 songbl) 命令，可以快速搜索连享会的推文，形成分享链接和文本。 - 安装方法： ssc install lianxh - 常用命令：(参见 help lianxh 或 lianxh命令介绍 ) - lianxh DID 倍分法 // 搜索包含关键词的推文 - lianxh DID, w nocat // 以文本链接方式呈现推文，便于在微信群中分享 - lianxh DID, m nocat // 以 Markdown 格式呈现推文，便于插入推文或答疑文档\n\n\n3.3.4 3d. ihelp 命令 - PDF 帮助文档\n有时候在答疑文档或推文中插入 Stata 官方的 PDF 帮助文档，并指明页码，有助于解释一些复杂的公司和例子。\n\n安装方法： ssc install ihelp\n使用方法：\n\nihelp xtreg // 在浏览器中打开 PDF 帮助文档\nihelp xtabond, w // 微信群分享 xtabond 命令的 PDF 文档链接\nihelp xtabond, m // Markdown 格式，适合插入答疑文档和推文\n\n\n\n\n3.3.5 3e. getiref 命令 - 引用文献\n如果回答中涉及到某些重要的文献可以使用 getiref 命令快速生成引文信息。\n\n安装方法： ssc install getiref\n使用方法： getiref 命令 可以根据 DOI 号快速生成引文信息，附加 PDF 和 Google 学术链接。\n常用命令：\n\ngetiref 10.1257/aer.109.4.1197, m // Markdown 格式，适合插入答疑文档和推文。附加选项 cite 可以生成引用格式。\ngetiref 10.1257/aer.109.4.1197, w // 文本格式，适合微信群分享\n\n\n\n\n3.3.6 3f. 内部协作整理\n\n使用场景：\n\n收集课程提问中，助教协作回答部分问题，并挑选问题给老师。\n老师答疑完成后，助教团队分工整理答疑，谁整理某题谁署名。\n\n使用工具： 腾讯文档(在线文档)\n使用途径:\n\n手机端：微信小程序\n电脑端：腾讯文档官网(https://docs.qq.com/desktop)\n\n演示截图(建议使用电脑端)",
+    "crumbs": [
+      "**答疑工作**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>TA01：连享会助教答疑手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA01-QA.html#其他工具",
+    "href": "body/TA01-QA.html#其他工具",
+    "title": "3  TA01：连享会助教答疑手册",
+    "section": "3.4 4. 其他工具",
+    "text": "3.4 4. 其他工具\n\n3.4.1 4.1 数学公式和图片\n\n数学公式：可以使用 Mathpix 或者 VScode 的 Markdown 插件来识别数学公式。Mathpix 识别的公式可以直接复制到 Markdown 文档中，VScode 的插件需要在编辑器中进行转换。\n\nMarkdown中书写LaTeX数学公式简介\n\n图片：可以使用 Snipaste 截图工具，直接截图到剪贴板中，然后粘贴到 Markdown 文档中。Snipaste 也可以将截图保存为图片文件，方便后续使用。\n图片上传到连享会图床：所有插入 QA 文档和连享会推文中的图片都必须上传到连享会的图床上，设置方法：连享会 PicGo 图床配置。\n\n\n\n3.4.2 4.2 Markdown 编辑器\n\n连玉君, 2020, Markdown：五分钟Markdown教程, 连享会 No.300.\n初虹, 2021, 学术论文写作新武器：Markdown-上篇, 连享会 No.603.\n初虹, 2021, 学术论文写作新武器：Markdown-下篇, 连享会 No.604.\n初虹, 2021, 学术论文写作新武器：Markdown-中篇, 连享会 No.605.\n宋森安, 2021, 用Markdown制作幻灯片-五分钟学会Marp（上篇）, 连享会 No.656.\n宋森安, 2021, 用Markdown制作幻灯片-五分钟学会Marp（下篇）, 连享会 No.657.\n连玉君, 2024, VScode：实用 Markdown 插件推荐, 连享会 No.1390.\n初虹, 2022, Markdown-LaTeX：经管人的VSCode配置大全, 连享会 No.1004.",
+    "crumbs": [
+      "**答疑工作**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>TA01：连享会助教答疑手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA01-QA.html#注意事项",
+    "href": "body/TA01-QA.html#注意事项",
+    "title": "3  TA01：连享会助教答疑手册",
+    "section": "3.5 5. 注意事项",
+    "text": "3.5 5. 注意事项\n\n腾讯文档在线收集表后台可以导出 xls 格式，复制问题那一列到 Markdown 文档或者腾讯文档（在线文档）中稍加整理即可使用。也可以借助 AI 工具直接转换为 Markdown 格式。\n老师精力有限，助教可以收集过程中（如：寒假大课：中午一次，下午第二次课结束后一次）回答部分技术性问题，并挑选 10-15 个问题留给老师回答。\n答疑结束后，及时整理老师答疑，并回答收集表中但老师并未回答的内容，最终形成 FAQs，整理到码云仓库中。\n当天的问卷可以在当晚 21 点左右停止收集，第二天重新开一个问卷。",
+    "crumbs": [
+      "**答疑工作**",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>TA01：连享会助教答疑手册</span>"
+    ]
+  },
+  {
+    "objectID": "body/03_format.html",
+    "href": "body/03_format.html",
+    "title": "5  空格",
+    "section": "",
+    "text": "Source: 李笑来, 2019, Markdown 简体中文与西文混排要点\n\n中英混排的文本中使用的空格是半角符号空格： —— 这也更符合大多数中文输入法的习惯。\n\n中文与英文之间、中文与数字之间，都要有一个半角空格；如：这是 1 个 variable 的例子\n英文字符、数字字符，与全角标点符号之间，不应该有空格；如：这是一个 variable，这是数字 100。；再比如：变量 a 的值是：8；a 的值大于变量 b。\n全角引号（单引号、双引号）之外要有空格；如：所谓的 \"过早引用\" 就是这样令人迷惑的。\n中英文并存的句子里，英文单词若是需要用括号括起，必须使用全角引号；如：这就是所谓的 \"过早引用\"（Forward References） —— 注意，引号和括号之间没有空格。\n破折号（------）前后要各有一个半角空格。\n省略号（......）后要各有一个半角空格。如：他们总是这么说...... 可实际上呢？\n引号、破折号、省略号之外的全角标点符号前后不能有空格。如，...... 就是这个元素（\"decorators\"）------ 即，所谓的装饰器。 注意，\"、）、------ 之间都没有空格。\n行内代码标示（Inline code）前后要有空格；如：表达式a += 1的意思是说......",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>空格</span>"
+    ]
+  },
+  {
+    "objectID": "body/07_refs_getirefs.html",
+    "href": "body/07_refs_getirefs.html",
+    "title": "7  参考文献",
+    "section": "",
+    "text": "7.0.1 PDF 链接问题\n使用 getirefs 自动插入文献",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>参考文献</span>"
+    ]
+  },
+  {
+    "objectID": "body/07_refs_getirefs.html#python-用户",
+    "href": "body/07_refs_getirefs.html#python-用户",
+    "title": "7  参考文献",
+    "section": "7.1 Python 用户",
+    "text": "7.1 Python 用户\n有些助教只用 Python",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>参考文献</span>"
+    ]
+  },
+  {
+    "objectID": "body/07_refs_getirefs.html#r-用户",
+    "href": "body/07_refs_getirefs.html#r-用户",
+    "title": "7  参考文献",
+    "section": "7.2 R 用户",
+    "text": "7.2 R 用户",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>参考文献</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA03-Replication-guide.html",
+    "href": "body/TA03-Replication-guide.html",
+    "title": "8  「论文复现」和「论文推介」类推文-写作指南",
+    "section": "",
+    "text": "8.1 5. 「论文复现」和「论文推介」类推文-写作指南\n本文源于 连享会·助教答疑和推文指南 第五部分。\n此类推文的风格类似于香樟推文，以及连享会发布的「论文复现」类推文，在 Stata 中输入 lianxh 论文复现 可以查阅相关推文，如：",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>「论文复现」和「论文推介」类推文-写作指南</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA03-Replication-guide.html#论文复现和论文推介类推文-写作指南",
+    "href": "body/TA03-Replication-guide.html#论文复现和论文推介类推文-写作指南",
+    "title": "8  「论文复现」和「论文推介」类推文-写作指南",
+    "section": "",
+    "text": "论文复现：顶刊JF中的因子分析-谁更容易当CEO？\nStata论文复现：做一个优雅的码农\nStata论文复现：份额移动法工具变量(Shift-Share IV)\nStata论文复现：社科领域Top5期刊复现资料\nStata论文复现：女性领导人当选是否有助于更多女性从政-RD\nStata论文复现：累进税率真的能减少不平等吗？\nStata 论文复现：Temperature Shocks and Economic Growth\nStata 论文复现：儿童权利公约对儿童健康的影响\nStata-JPE论文重现：资本深化与非平衡经济增长\n\n\n8.1.1 5.1 需要提交的资料\n\nA. 中文精要。用 Markdown 撰写；\n\n建议使用编辑器：VScode (插件安装和使用; 实用插件推荐)\n你可以安装 Markdown PDF 或 Markdown All in one 等插件，将你的 Markdown 文档转换为 HTML 或 PDF 格式；\n你也可以使用 marp 制作一份与课程报告对应的幻灯片，参见 Marp：用Markdown快速写幻灯片 以及 DSbook-Marp 模板。\n\nB. 重现数据和代码。建议参考 T6_Chen_2019 的模式放置相关文档 (具体设定可以酌情增减)。\n\n文档名称：请使用我指定的文件夹名称，不要擅自修改。\n代码格式：原文作者提供的代码有时候排版很奇怪，请参考 一些论文重现范本 中的代码格式进行调整。确保代码结构清晰，版面整洁、风格一致。 \n\n\n\n\n8.1.2 5.2 中文精要写作要点\n中文精要的目的是为了通过重现期刊论文中的关键结果，帮助学员更好地掌握课程中介绍的计量方法。要求日下： - 全文 10000-15000 字。 - 文章背景介绍： - 1-2 页 (800-1500 字) - 重点介绍：研究了什么问题、基本方法、数据来源、主要结论 - 实证分析部分 - 模型设定 (重点介绍对应专题中涉及的方法) - 关键变量的定义和含义 - 作者的估计过程 - 核心结果的讨论 - 在介绍论文核心实证结果时，可以插入原文中的表格，并对作者提供的代码进行适当精简 (只选取有代表性的代码) 来说明表格中的结果对应的 Stata 代码。主要目的是使读者能够将论文中的结果和如何实操结合起来。 - 其他相关文献扩展 (针对 B 类文献) - 介绍 2-3 篇引用该文的后续文献，重点介绍它们进行了拓展，或者从哪些新的角度 (样本、方法、变量等) 进行了分析。 - 每篇半页篇幅即可\n \n\n\n8.1.3 5.3 一些论文重现范本\n\n下载： Top 论文复现及中文精要范例\n\n坚果云：https://www.jianguoyun.com/p/DVlZ9DYQtKiFCBil9O4EIAA\n\n这些都是连享会往期课程中使用的讲义，每篇文章都对应了中文精要、**Data*\n部分论文还提供了使用 Marp 制作的幻灯片。\n\n\n \n\n\n8.1.4 5.4 查找文献的来源\n\n连享会：论文重现网站大全\n\n\nMendeley 平台: Discover Mendeley Data\n密歇根大学的 ICPSR: ICPSR Data\n哈佛大学的 IQSS: Harvard Dataverse\n\n大而全\n\nSebastian Kranz（Ulm University）: Find Economic Articles with Data\n\n可以指定期刊名称、代码类型等\n\nReplication WIKI: Replication in the social sciences, particularly economics!\n\n\n\n8.1.5 5.5 一些推文\n\n论文重现：外部命令的版本控制\nStata：论文重现代码模板\n可重复性研究：如何保证你的研究结果可重现？",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>「论文复现」和「论文推介」类推文-写作指南</span>"
+    ]
+  },
+  {
+    "objectID": "body/TA03-Replication-guide.html#提交资料",
+    "href": "body/TA03-Replication-guide.html#提交资料",
+    "title": "8  「论文复现」和「论文推介」类推文-写作指南",
+    "section": "8.2 5.6 提交资料",
+    "text": "8.2 5.6 提交资料\n\n请上传到坚果云 (1 分钟即可完成)：点击提交\n\n姓名写法：rep-姓名 (在姓名前加上 rep 字样)\n注意事项：\n\n你可以更新你提交的资料，再次提交时，只需添加 V1, V2, …… 版本号标记即可，如「张帅帅-V2-论文作者-年份.zip」。\n请务必写明论文作者和年份。",
+    "crumbs": [
+      "**推文写作**",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>「论文复现」和「论文推介」类推文-写作指南</span>"
+    ]
+  },
+  {
+    "objectID": "body/08_suggest_topics.html",
+    "href": "body/08_suggest_topics.html",
+    "title": "9  自荐推文选题",
+    "section": "",
+    "text": "9.1 登记格式\n如果大家有好的选题，可以在下方登记。登记的选题有两个用途：\n具体说明如下：",
+    "crumbs": [
+      "**附录**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>自荐推文选题</span>"
+    ]
+  },
+  {
+    "objectID": "body/08_suggest_topics.html#登记格式",
+    "href": "body/08_suggest_topics.html#登记格式",
+    "title": "9  自荐推文选题",
+    "section": "",
+    "text": "- 标题\n  - 作者：姓名\n  - 选题类型：\n  - 简介：该选题的主要内容，\n  - 选题理由：\n\n\n9.1.1 标题\n\n简洁明了，便于理解。\n标题要有较高的信息含量和吸引力。参见 lianxh.cn 中的推文标题。\n\n\n\n9.1.2 选题类型\n\nP1-翻译：翻译英文论文或 blog\nP2-新命令：介绍 Stata / R / Python 等的新命令或 package\nP3-新方法：介绍新方法或模型，可以是统计方法、机器学习方法等，也可以是 Stata Journal，Journal of Statistical Software，JAE，JOE，Econometrica，JHR 等期刊的文章中的新方法或模型。\nP4-论文推介：论文推介。一些比较重要的论文的介绍，最好包含关键公式和代码的解读。\nP5-论文复现：论文复现。\nP6-实用工具：比如 APP, 网站，在线工具等。\nP7-其他：其他类型的选题。",
+    "crumbs": [
+      "**附录**",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>自荐推文选题</span>"
+    ]
+  }
+]

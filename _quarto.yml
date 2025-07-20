@@ -1,0 +1,74 @@
+project:
+  type: book
+  output-dir: tabook
+
+book:
+  title: "连享会助教手册"
+  reader-mode: true 
+  author: "连享会"
+  date: today
+  date-format: iso  
+  
+  sidebar: 
+    title: "<a href='/index.html'>TAbook</a>"  # !important, 否则主页链返回链接会出错
+    logo: images/book-logo.png
+    logo-href: https://arlionn.github.io/lianxhta/
+    style: floating  #docked
+    search: true
+    tools:
+      - icon: house-fill
+        href: https://www.lianxh.cn
+      - icon: camera-video-fill
+        href: https://lianxh-class.cn/
+      - icon: github
+        href: https://github.com/arlionn/lianxhta
+  favicon: images/book-logo.png   # URL logo
+  site-url: https://arlionn.github.io/lianxhta/ # 主页地址，否则点击右上角链接会乱码
+  editor: source    # 始终采用源代码模式编辑
+
+#----------------------- Chapters ---------------
+  chapters:
+
+    - index.qmd
+
+    - part: "**整体流程**"
+      chapters: 
+        - body/01_intro.md
+
+
+    - part: "**答疑工作**"
+      chapters: 
+        - body/TA01-QA.md
+      
+    - part: "**推文写作**"
+      chapters: 
+        - body/02_select.md
+        - body/03_format.md
+        - body/04_use_AI.md
+        - body/07_refs_getirefs.md
+        - body/TA03-Replication-guide.md
+
+    - part: "**附录**"
+      chapters: 
+        - body/08_suggest_topics.md
+
+format:
+  html:
+    toc: true            # 启用目录
+    toc-depth: 3         # 三级以上 sections 才伸缩
+    theme: cosmo         # 可选：cosmo, flatly, litera, litera, yeti 等  主题模版
+    linestretch: 1.6          # 行间距   1.7   
+    fontsize: 11.5pt          # 字号
+    number-sections: true     # 自动章节编号
+    link-external-newwindow: true
+    highlight: true            # 代码高亮
+    highlight-style: atom-one  # 语法高亮，atom-one, breezy, github, tango, solarized-light
+    code-fold: false           # （可选）代码默认不折叠
+    code-line-numbers: false   # （可选）关闭行号
+    code-overflow: wrap        # 控制长代码的换行   
+    css: styles.css
+    callout-appearance: default        # 启用 callout 默认渲染样式
+    md-extensions:
+      - callout                        # 确保 markdown 支持 callout 块语法
+editor: visual
+

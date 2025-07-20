@@ -1,13 +1,11 @@
 
-&emsp;
-
 > **作者**：郝亮 (北京工业大学)    
 > **邮箱**：<haoliangcfa@126.com>
 
 &emsp;
 
-- Title: Quarto 助力论文和讲义撰写
-- Keywords: Quarto, R, 论文排版, 讲义排版
+- **Title**: Quarto 助力论文和讲义撰写
+- **Keywords**: Quarto, R, 论文排版, 讲义排版
 
 &emsp;
 
