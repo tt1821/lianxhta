@@ -8,6 +8,9 @@
 
 ## 2. 推文选题和发布
 
+> &#x1F34E; 完成后的推文务必提交到坚果云：[点击提交](https://workspace.jianguoyun.com/inbox/collect/57246515e7e142b68971ac22f2bda5d0/submit)  
+详见 Section 2.3。
+
 ### 2.1 认领选题
 
 1. **注册 Github 账号** (已有可跳过此步骤)。登录 github 后访问 [arlionn/lianxhta](https://github.com/arlionn/lianxhta) 仓库。
