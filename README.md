@@ -9,7 +9,8 @@
 ## 2. 推文选题和发布
 
 > &#x1F34E; 完成后的推文务必提交到坚果云：[点击提交](https://workspace.jianguoyun.com/inbox/collect/57246515e7e142b68971ac22f2bda5d0/submit)  
-详见 Section 2.3。
+详见 Section 2.3。  
+> 推文格式参见往期推文范本：<https://github.com/arlionn/lianxhta/tree/main/template>
 
 ### 2.1 认领选题
 
