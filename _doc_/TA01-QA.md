@@ -171,8 +171,7 @@
 ## 4. 其他工具
 
 ### 4.1 数学公式和图片
-
-- **数学公式**：可以使用 Mathpix 或者 VScode 的 Markdown 插件来识别数学公式。Mathpix 识别的公式可以直接复制到 Markdown 文档中，VScode 的插件需要在编辑器中进行转换。
+- **数学公式**：可以使用 [Mathpix](https://www.lianxh.cn/details/284.html) (收费) 或者 [simpletex](https://simpletex.cn/) (推荐，免费) 来识别数学公式。
   - [Markdown中书写LaTeX数学公式简介](https://www.lianxh.cn/details/250.html)
 - **图片**：可以使用 Snipaste 截图工具，直接截图到剪贴板中，然后粘贴到 Markdown 文档中。Snipaste 也可以将截图保存为图片文件，方便后续使用。
 - **图片上传到连享会图床**：所有插入 QA 文档和连享会推文中的图片都必须上传到连享会的图床上，设置方法：[连享会 PicGo 图床配置](https://github.com/arlionn/lianxhta/wiki/lianxh_PicGo)。

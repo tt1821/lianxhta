@@ -51,8 +51,17 @@
 
 ### 2.2 推文撰写
 
-- 可以在 [lianxh.cn](https://www.lianxh.cn) 中搜索相关主题，查看已有的推文，了解行文风格和格式。可以私信连老师或李晓燕老师获取推文 Markdown 原文。
-- [template](https://github.com/arlionn/lianxhta/blob/main/template/readme.md) 文件夹中放置了一些已经发布的推文，可以参考其行文风格和格式。
+- **整体风格和篇幅**：可以在 [lianxh.cn](https://www.lianxh.cn) 中搜索相关主题，查看已有的推文，了解行文风格和格式。可以私信连老师或李晓燕老师获取推文 Markdown 原文。
+- **推文格式**：[template](https://github.com/arlionn/lianxhta/blob/main/template/readme.md) 文件夹中放置了一些已经发布的推文，可以参考其行文风格和格式。
+- **数学公式**：
+  - LaTeX 公式录入方法参见：[Markdown中书写LaTeX数学公式简介](https://www.lianxh.cn/details/250.html)
+  - **公式识别**：可以使用 [Mathpix](https://www.lianxh.cn/details/284.html) (收费) 或者 [simpletex](https://simpletex.cn/) (推荐，免费) 来识别数学公式。
+- **图片**：
+  - **本地图片的命名规则**：请严格按照 `作者姓名_推文标题简写_Figxx.png` 格式命名图片，例如：`连玉君_面板数据一文读懂_Fig01.png`。由于我们所有人的图片都放置在同一个图床，同名文件会自动「旧的覆盖新的」。如果图片名称过于简单，不但会导致你的图片无法正常显示，也会导致此前的推文图片引用错误。 
+  - 如果截图后使用 [PicGo 软件](https://github.com/arlionn/lianxhta/wiki/lianxh_PicGo) 上传图片，它会自动利用时间戳作为图片名称，通常不会产生冲突。
+  - 可以使用 [Snipaste](https://www.lianxh.cn/details/1111.html) 截图工具，直接截图到剪贴板中，然后使用 PicGo 软件上传到连享会图床，将产生的链接 (已自动存入剪切板) 粘贴到 Markdown 文档中。Snipaste 也可以将截图保存为图片文件，方便后续使用。
+  - **图片上传到连享会图床**：所有插入连享会推文和答疑文档的图片都必须上传到连享会的图床上，设置方法：[连享会 PicGo 图床配置](https://github.com/arlionn/lianxhta/wiki/lianxh_PicGo)。
+
 
 ### 2.3 推文提交
 
