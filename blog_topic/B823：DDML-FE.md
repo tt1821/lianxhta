@@ -1,4 +1,4 @@
-# OK-B823-赵俊：DDML-FE.md
+# B823：DDML-FE
 
 两篇推文的工作量
 
