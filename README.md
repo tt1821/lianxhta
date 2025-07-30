@@ -61,7 +61,7 @@
   - 如果截图后使用 [PicGo 软件](https://github.com/arlionn/lianxhta/wiki/lianxh_PicGo) 上传图片，它会自动利用时间戳作为图片名称，通常不会产生冲突。
   - 可以使用 [Snipaste](https://www.lianxh.cn/details/1111.html) 截图工具，直接截图到剪贴板中，然后使用 PicGo 软件上传到连享会图床，将产生的链接 (已自动存入剪切板) 粘贴到 Markdown 文档中。Snipaste 也可以将截图保存为图片文件，方便后续使用。
   - **图片上传到连享会图床**：所有插入连享会推文和答疑文档的图片都必须上传到连享会的图床上，设置方法：[连享会 PicGo 图床配置](https://github.com/arlionn/lianxhta/wiki/lianxh_PicGo)。
-- **借助 AI 写推文**：参见连玉君, 2025, [Empirical Research with AI](https://lianxhcn.github.io/research_with_AI/)，[Chapter 7-9](https://lianxhcn.github.io/research_with_AI/body/05_00_read_paper_with_AI.html) 介绍的方法和提示词。 
+- **借助 AI 写推文**：参见连玉君, 2025, **Empirical Research with AI**，[Chapter 7-9](https://lianxhcn.github.io/research_with_AI/body/05_00_read_paper_with_AI.html) 介绍的方法和提示词。 
 
 ### 2.3 推文提交
 
